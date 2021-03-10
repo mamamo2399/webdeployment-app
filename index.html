@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title> Home Page</title>
+    </head>
+    <body>
+        <section class="showcase active">
+            <header>
+                <h2 class="logo">AIMILY POLICARPIO</h2>
+                <div class="toggle active"></div>
+            </header>
+            <video src="explore.mp4" muted loop autoplay></video>
+            
+            <div class="overlay"></div>
+            <div class="text">
+                <h2>ESCAPE LIFE</h2>
+                <h3>FOR A LITTLE WHILE</h3>
+                <p>“Do not follow where the path may lead. Go instead where there is no path and leave a trail” -Ralph Waldo Emerson</p>
+                <a href="#">Explore</a>
+            </div>
+            <ul class="social">
+                <li><a href="#"><img src="facebook.png" alt=""/></a></li>
+                <li><a href="#"><img src="twitter.png" alt=""/></a></li>
+                <li><a href="#"><img src="instagram.png" alt=""/></a></li>
+            </ul>
+        </section>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+<script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () =>{
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+    })
+</script>
+
+    </body>
+</html>
